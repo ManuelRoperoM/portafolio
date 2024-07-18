@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Nunito+Sans:opsz,wdth@6..12,87.5&display=swap');
+:root {
+  --color-text: rgb(75, 72, 72);
+  --color-text-scundary: rgb(36, 35, 35);
+  --color-purple: rgb(153, 165, 207);
+  --color-background: rgb(227,233,255);
+  --fuente-inter: "Inter", sans-serif;
+  --fuente-nunito: "Nunito Sans", sans-serif;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+html{
+  font-size: 16px;
+  background-color: rgb(64, 75, 109);
+}
+
+.to-do-app{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px 0px;
+}
+
+.to-do-app .content{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header{
+  font-family: var(--fuente-inter);
+  font-size: 2.5rem;
+  color: var(--color-text);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+}
+
+.header h1{
+  color: var(--color-purple);
+}
+.header h1 strong{
+  color: rgb(149, 125, 216);
+}
+.header .form{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 5px 0px;
+}
+
+.header .form .input-header{
+  width: 90%;
+  height: 20px;
+  display: flex;
+  font-family: var(--fuente-nunito);
+  font-size: 1rem;
+  border: 1px solid rgb(100, 98, 98);
+  border-radius: 6px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  padding-left: 5.5px;
+  color: var(--color-text);
+}
+
+.header .form .input-header:focus{
+  border-color: var(--color-purple);
+  background-color: var(--color-background);
+  font-family: var(--fuente-nunito);
+  padding-left: 5.5px;
+}
+
+.tasks{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.task{
+  margin: 2.5px 0px;
+  width: 90%;
+  border-radius: 15px;
+  list-style: none;
+  border: 1px solid var(--color-purple);
+  background-color: var(--color-background);
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.task-check{
+  color: var(--color-text);
+  font-family: var(--fuente-nunito);
+  margin: 0 1.2rem;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.label-input{
+  display: flex;
+  align-items: center;
+}
+.check-task[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 0.9rem;
+  height: 0.9rem;
+  margin-right: 2px;
+  border: 1px solid var(--color-purple);
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+}
+
+.check-task[type="checkbox"]:hover {
+  background-color: rgb(171, 155, 216);
+  -webkit-transition: 0.15s;
+  transition: 0.15s;
+}
+
+.check-task[type="checkbox"]:checked {
+  background-color: rgb(149, 125, 216);
+}
+
+.label-task:hover{
+  color: rgb(187, 181, 181);
+  -webkit-transition: 0.15s;
+  transition: 0.15s;
+}
+
+.input-task{
+  height: auto;
+  width: 100%;
+  font-family: var(--fuente-nunito);
+  background-color: var(--color-background);
+  border: none;
+  border-bottom: 1px solid var(--color-purple);
+  outline: none;
+}
+
+.input-task:focus{
+  border-bottom: 1.5px solid var(--color-purple);
+  -webkit-transition: 0.15s;
+  transition: 0.15s;
+  font-family: var(--fuente-nunito);
+  font-size: 1rem;
+}
+
+.task-btn{
+  border: none;
+  padding: 0px;
+  margin: 0px;
+  font-size: 1.2rem;
+  font-weight: 10;
+  color: red;
+  background-color: var(--color-background);
+}
+
+.task-btn :hover{
+  font-size: 1.5rem;
+  -webkit-transition: 0.15s;
+  transition: 0.15s;
+}
+
+.footer{
+  margin-top: 4px;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-elements{
+  margin-top: 2px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-actions{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer-actions select{
+  background-color: var(--color-background);
+  border-radius: 12px;
+  font-family: var(--fuente-nunito);
+  border: solid 1px var(--color-purple);
+  outline: none;
+}
+
+.footer-actions button{
+  color: rgb(149, 125, 216);
+  background-color: var(--color-background);
+  border-radius: 5px;
+  border: solid 1px var(--color-purple);
+}
+
+.footer-count{
+  margin-top: 8px;
+  font-family: var(--fuente-inter);
+  color: var(--color-purple);
+}
+
+.footer-count strong{
+  color: rgb(149, 125, 216);
+}
