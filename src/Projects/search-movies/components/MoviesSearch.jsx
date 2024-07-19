@@ -22,7 +22,7 @@ function SearchMovies () {
   return (
     <div className='page'>
       <header>
-        <h1>MyMovies</h1>
+        <h1>Movies Search</h1>
         <form className='movies__form' onSubmit={handleSubmit}>
           <input onChange={handleChange} value={search} name='search' placeholder='Avengers' />
           <button type='submit'><Icon path={mdiMovieSearch}/></button>
