@@ -55,26 +55,29 @@ function Triqui () {
     <main className='board'>
       <h1> Triqui </h1>
       <button onClick={resetGame}>Reset Game</button>
-      <section className='game'>
-        {
-          board.map((_, index) => {
-            return (
-              <Square
-                key={index}
-                index={index}
-                updateBoard={updateBoard}
-              >
-                {board[index]}
-              </Square>
-            )
-          })
-        }
-      </section>
+      <div className='content'>
+        <section className='game'>
+          {
+            board.map((_, index) => {
+              return (
+                <Square
+                  key={index}
+                  index={index}
+                  updateBoard={updateBoard}
+                >
+                  {board[index]}
+                </Square>
+              )
+            })
+          }
+        </section>
+        <section className='turn'>
+          <Square isSelected={turn === Turns.X}> {Turns.X} </Square>
+          <Square isSelected={turn === Turns.O}> {Turns.O} </Square>
+        </section>
 
-      <section className='turn'>
-        <Square isSelected={turn === Turns.X}> {Turns.X} </Square>
-        <Square isSelected={turn === Turns.O}> {Turns.O} </Square>
-      </section>
+      </div>
+
       <WinnerModal resetGame={resetGame} winner={winner} />
     </main>
   )
