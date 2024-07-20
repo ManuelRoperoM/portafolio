@@ -29,7 +29,7 @@ function SearchMovies () {
         </form>
         {error && <p className='error'> {error} </p>}
       </header>
-      <main>
+      <main className='movie__content'>
         <Movies movies={mappedMovies} />
       </main>
     </div>
