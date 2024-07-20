@@ -12,10 +12,10 @@ function Store () {
       <div className='store__page'>
         <header className='store__header'> 
           <h1>Online Shopping</h1>
-          <Filters price={price} setPrice={setPrice} setCategory={setCategory} /> 
+          <Filters price={price} setPrice={setPrice} setCategory={setCategory} />
+          <ShoppingCart />
         </header>
         <div className='store__content'>
-          <ShoppingCart />
           <Products productsShow={productsShow}/>
         </div>
       </div>

@@ -70,6 +70,7 @@
 }
 
 .addCart{
+  color: white;
   background-color: rgb(54, 141, 223);
 }
 .product-actions {
@@ -84,6 +85,7 @@
 }
 
 .removeCart {
+  color: white;
   background-color: rgb(241, 150, 14);
 }
 
@@ -93,10 +95,9 @@
 }
 
 .cart-button {
-    position: fixed;
-    left: -10px;
-    top: 100px;
-    background: rgb(26, 26, 68);
+    outline: none;
+    background: rgb(54, 141, 223);
+    border: 1px solid rgb(26, 26, 68);
     color: white;
     border: 1px solid;
     cursor: pointer;
@@ -105,8 +106,9 @@
     transition: left 0.3s ease;
   }
   .cart-button.open {
+    outline: none;
     left: 300px;
-    color: rgb(212, 226, 151);
+    color: rgb(241,150,14);
     border: 1px solid white;
   }
   .cart-sidebar {
@@ -115,10 +117,11 @@
     top: 0;
     width: 300px;
     height: 100%;
-    background: rgb(26, 26, 68);
+    background-color: rgb(231,234,238);
     box-shadow: 2px 0 5px rgb(18, 18, 43);
+    color: rgb(26, 26, 68);
     transition: left 0.3s ease;
-    z-index: 1001;
+    z-index: 1000;
     overflow-y: scroll;
     scroll-behavior: smooth;
     --scrollbar-thumb: #2d485f;
@@ -138,7 +141,7 @@
   }
 
   .cart-sidebar .content-cart h3{
-    color: rgb(241, 243, 233);
+    color: rgb(33,53,71);
     font-size: small;
   }
 
@@ -153,7 +156,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    border: 1px solid white;
+    border: 1px solid rgb(26, 26, 68);
     border-radius: 10%;
     margin-bottom: 5px;
     list-style: none;
