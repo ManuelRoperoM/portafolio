@@ -1,4 +1,5 @@
 .store__page {
+  color: #213547;
   margin-top: 20px;
   display: flex;
   flex-direction: column;
@@ -94,6 +95,13 @@
     justify-content: center;
 }
 
+.store__page button:hover {
+  border-color: #646cff;
+}
+.store__page button:focus,
+.store__page button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
 .cart-button {
     outline: none;
     background: rgb(54, 141, 223);
