@@ -23,9 +23,9 @@ function App () {
       <header className='portafolio__header'>
         <h3>Manuel Ropero</h3>
         <div className='header__actions'>
-          <a href="">Inicio</a>
           <a href="">Sobre mi</a>
           <a href="">Proyectos</a>
+          <button>Contáctame</button>
         </div>
         <div className='header__button'>
           <button>Contáctame</button>
@@ -140,57 +140,13 @@ function App () {
               <Icon path={mdiCodeBlockTags} size={1.8} />
               <h4>Proyectos Personales</h4>
             </div>
-            <div className='content'>
+            {/* <div className='content'>
               <div className='projects'>
                 <Triqui />
                 <ToDoProject />
                 <SearchMovies />
                 <Store/>
               </div> 
-            </div>
-            {/* <div className='skills-boxes'>
-              <div className='skill-front'>
-                <Icon className='icon' path={mdiViewDashboardVariant} size={1.7} />
-                <h5>Front-End</h5>
-                <p>
-                  Puedo crear interfaces de usuario intuitivas y atractivas utilizando tecnologías como HTML, CSS, JavaScript y frameworks modernos como React. Me especializo en la optimización de la experiencia del usuario y el diseño responsivo.
-                </p>
-              </div>
-              <div className='skill-backend'>
-                <Icon className='icon' path={mdiServerNetwork} size={1.7} />
-                <h5>Back-End</h5>
-                <p>
-                  Desarrollo la lógica del servidor y API's eficientes con Node.js y Express. Garantizo un rendimiento óptimo y seguridad en el manejo de datos, además de integrar servicios externos y autenticación.
-                </p>
-              </div>
-              <div className='skill-database'>
-                <Icon className='icon'path={mdiDatabaseCog} size={1.7} />
-                <h5>Bases de datos</h5>
-                <p>
-                  Tengo experiencia en el diseño y gestión de bases de datos relacionales como MySQL, PostgreSQL y SQLite. Me enfoco en la optimización de consultas y la integridad de los datos.
-                </p>
-              </div>
-              <div className='skill-chatbots'>
-                <Icon className='icon' path={mdiMessageText} size={1.7} />
-                <h5>ChatBots</h5>
-                <p>
-                He desarrollado ChatBots inteligentes para plataformas como Telegram. <br />Estos bots están diseñados para recopilar información importante de manera rápida y eficaz, según las necesidades del usuario, mejorando así la interacción y automatizando tareas repetitivas.
-                </p>
-              </div>
-              <div className='skill-data-analytics'>
-                <Icon className='icon' path={mdiGoogleAnalytics} size={1.7} />
-                <h5>Analisis de datos</h5>
-                <p>
-                  Puedo mantener comunicación efectiva con el equipo de desarrollo, atendiendo cualquier inquietud que se presente para llevar el proyecto de manera correcta. Fomento la colaboración y el intercambio de ideas para alcanzar los objetivos del proyecto.
-                </p>
-              </div>
-              <div className='skill-comunication'>
-                <Icon className='icon' path={mdiBullhorn} size={1.7} />
-                <h5>Comunicación</h5>
-                <p>
-                  Puedo mantener comunicación efectiva con el equipo de desarrollo, atendiendo cualquier inquietud que se presente para llevar el proyecto de manera correcta. Fomento la colaboración y el intercambio de ideas para alcanzar los objetivos del proyecto.
-                </p>
-              </div>
             </div> */}
           </div>
         </div>
