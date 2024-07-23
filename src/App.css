@@ -81,6 +81,7 @@ html{
     justify-content: space-around;
     align-items: center;
     width: 80%;
+    margin-bottom: 80px;
 }
 
 .portafolio__main .presentacion img{
@@ -108,7 +109,9 @@ html{
     font-family: var(--fuente-dm-sans);
     font-size: 3rem;
 }
-
+.portafolio__main .presentacion .presentacion__descripcion .photo-small{
+    display: none;
+}
 .portafolio__main .presentacion .presentacion__descripcion p{
     text-align: justify;
     color: var(--color-primary-white);;
@@ -304,7 +307,6 @@ html{
 
 @media only screen and (max-width: 1150px) {
     .portafolio__header{
-        background-color: red !important;
         gap: 5px;
     }
     .portafolio__header .header__actions{
@@ -341,5 +343,46 @@ html{
     .portafolio__header .header__button button:hover {
         display: none;
     }
+
+    .portafolio__main .work-experience .works .work {
+        display: inline;
+    }
+
+    .portafolio__main .work-experience .works .work h6{
+        margin-bottom: 25px;
+    }
+
+    .portafolio__main .work-experience .works .work p{
+        text-align: justify;
+        max-width: 90%;
+    }
     
+  }
+
+  /* vista celular */
+
+  @media only screen and (max-width: 960px) {
+    
+    .portafolio__main .presentacion .photo-big{
+        display: none;
+    }
+    .portafolio__main .presentacion .presentacion__descripcion{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .portafolio__main .presentacion .presentacion__descripcion .photo-small{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+  }
+
+  /* dispositivos pequeños */
+  @media only screen and (max-width: 450px){
+    .portafolio__main .skills .skills__content .skills-boxes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
   }
