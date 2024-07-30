@@ -15,6 +15,8 @@ import { mdiGoogleAnalytics } from '@mdi/js';
 import { mdiBullhorn } from '@mdi/js';
 import { mdiAccountOutline } from '@mdi/js';
 import { mdiCogBox } from '@mdi/js';
+import 'react-responsive-carousel/lib/styles/carousel.min.css'
+import { Carousel } from 'react-responsive-carousel'
 import { mdiAccountHardHatOutline } from '@mdi/js';
 import { mdiCodeBlockTags } from '@mdi/js';
 function App () {
@@ -143,26 +145,21 @@ function App () {
               <Icon path={mdiCodeBlockTags} size={1.8} />
               <h4>Proyectos Personales</h4>
             </div>
-            {/* <div className='content'>
-              <div className='projects'>
+            <div className='content'>
+            <div className='projects'>
+              <Carousel>
                 <Triqui />
                 <ToDoProject />
                 <SearchMovies />
                 <Store/>
-              </div> 
-            </div> */}
+              </Carousel>
+            </div> 
+          </div>
           </div>
         </div>
       </main>
 
-      {/* <div className='content'>
-        <div className='projects'>
-          <Triqui />
-          <ToDoProject />
-          <SearchMovies />
-          <Store/>
-        </div> 
-      </div> */}
+
 
     </>
   )
