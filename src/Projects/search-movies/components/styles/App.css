@@ -90,8 +90,9 @@
 
 .movies{
     display: grid;
-    width: 100%;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    width: 95%;
+    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     list-style: none;
 }
 
@@ -108,6 +109,28 @@
 .movie img {
     margin-top: -20px;
     margin: 20px;
-    width: 180px;
+    /* width: 180px; */
+    max-width: 70%;
     height: 240px;
+}
+
+
+/* vista tablet */
+@media only screen and (max-width: 719px) {
+    .movies img{
+        max-width: 50%;
+    }
+}
+
+
+/* vista cell */
+@media only screen and (max-width: 465px) {
+    .movies__form{
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .movies img{
+        max-width: 60%;
+    }
 }
