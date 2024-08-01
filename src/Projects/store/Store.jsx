@@ -13,7 +13,7 @@ function Store () {
         <header className='store__header'> 
           <h1>Online Shopping</h1>
           <Filters price={price} setPrice={setPrice} setCategory={setCategory} />
-          <ShoppingCart />
+          <ShoppingCart/>
         </header>
         <div className='store__content'>
           <Products productsShow={productsShow}/>

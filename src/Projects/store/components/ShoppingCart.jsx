@@ -21,17 +21,19 @@ export function ShoppingCart () {
 
   return (
     <>
-      <button className={`cart-button ${isCartOpen ? 'open' : ''}`} onClick={toogleCart}>
-        {
-      !isCartOpen
-        ? (
-          <Icon className='icon-cart' path={mdiCartVariant} size={1} />
-          )
-        : (
-          <Icon path={mdiCartRemove} size={1} />
-          )
-    }
-      </button>
+      <div className='header-button'>
+        <button className={`cart-button ${isCartOpen ? 'open' : ''}`} onClick={toogleCart}>
+          {
+        !isCartOpen
+          ? (
+            <Icon className='icon-cart' path={mdiCartVariant} size={1} />
+            )
+          : (
+            <Icon path={mdiCartRemove} size={1} />
+            )
+      }
+        </button>
+      </div>
       <div className={`cart-sidebar ${isCartOpen ? 'open' : ''}`}>
         <div className='content-cart'>
           <h2>ShoppingCart</h2>
