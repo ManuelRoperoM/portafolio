@@ -19,22 +19,31 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css'
 import { Carousel } from 'react-responsive-carousel'
 import { mdiAccountHardHatOutline } from '@mdi/js';
 import { mdiCodeBlockTags } from '@mdi/js';
+import { useState } from 'react'
+import { ModalContact } from './components/ModalContact'
 function App () {
+  const [windowContact, setWindowContact] = useState(false)
+  const contactButton = () => {
+    setWindowContact(true)
+  }
+  const hideContact = () => {
+    setWindowContact(false)
+  }
   return (
     <>
       <header className='portafolio__header'>
         <h3>Manuel Ropero</h3>
         <div className='header__actions'>
-          <a href="">Sobre mi</a>
-          <a href="">Proyectos</a>
-          <button>Contáctame</button>
+          <a href="#about">Sobre mi</a>
+          <a href="#projects">Proyectos</a>
+          <button onClick={contactButton}>Contáctame</button>
         </div>
         <div className='header__button'>
-          <button>Contáctame</button>
+          <button onClick={contactButton}>Contáctame</button>
         </div>
       </header>
       <main className='portafolio__main'>
-        <div className='presentacion'>
+        <div id='about' className='presentacion'>
           <img className='photo-big' src={photo} alt="Fotografia Manuel Ropero" />
           <div className='presentacion__descripcion'>
             <div className='title'>
@@ -146,7 +155,7 @@ function App () {
               <h4>Proyectos Personales</h4>
             </div>
             <div className='content'>
-            <div className='projects'>
+            <div id='projects' className='projects'>
               <Carousel>
                 <Triqui />
                 <ToDoProject />
@@ -159,6 +168,7 @@ function App () {
         </div>
       </main>
 
+      <ModalContact windowContact={windowContact} hideContact={hideContact}/>
 
 
     </>

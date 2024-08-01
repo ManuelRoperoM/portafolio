@@ -15,7 +15,7 @@
     margin: 0;
 }
 html{
-    font-size: 16px; 
+    font-size: 16px;
 }
 .portafolio__header{
     color: var(--color-primary-white);
@@ -57,6 +57,7 @@ html{
 .portafolio__header .header__actions a:hover {
     border-bottom: 1px solid var(--color-yellow-complementary);
 }
+
 
 .portafolio__header .header__button button {
     color: var(--color-primary-white);
@@ -314,6 +315,85 @@ html{
     color: var(--color-yellow-complementary);
 }
 
+.window__contact{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(42, 18, 44, 0.507);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.window__contact .content{
+    width: 400px;
+    background-color: rgb(56, 29, 71);;
+    color: var(--color-primary-white);
+    font-family: var(--fuente-poppins);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+    border-radius: 20px;
+}
+
+.window__contact .content .close-button {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.window__contact .content .close-button button{
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    background-color: transparent;
+    outline: none;
+    border-radius: 50%;
+    display: flex;
+    border: none;
+    cursor: pointer;
+}
+
+.window__contact .content .title{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0px;
+}
+
+.window__contact .content .contact-info ul{
+    list-style: none;
+}
+
+.window__contact .content .contact-info ul li{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.window__contact .content .contact-info ul li a{
+    gap: 10px;
+    display: flex;
+    color: white;
+    text-decoration: none;
+}
+
+.window__contact .content .contact-info ul li a:hover{
+    color: var(--color-yellow-complementary);
+    border-bottom: 1px solid var(--color-yellow-complementary);
+}
+.window__contact .content .contact-info p{
+    color: var(--color-yellow-complementary);
+}
+
 /* Responsive vista tablet */
 
 @media only screen and (max-width: 1150px) {
@@ -367,13 +447,13 @@ html{
         text-align: justify;
         max-width: 90%;
     }
-    
+
   }
 
   /* vista celular */
 
   @media only screen and (max-width: 960px) {
-    
+
     .portafolio__main .presentacion .photo-big{
         display: none;
     }
@@ -395,5 +475,8 @@ html{
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    .window__contact .content{
+        width: 75%;
     }
   }
